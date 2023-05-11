@@ -36,6 +36,7 @@ namespace JogoDaForca.WinApp
             catch (FormatException)
             {
                 MessageBox.Show("Deve ser informado apenas uma letra..", "LETRA INVÁLIDA");
+                txtObterPalpite.Text = "";
                 return '?';
             }
             return palpite;
@@ -98,17 +99,20 @@ namespace JogoDaForca.WinApp
             }
             if (quantidadeErros == 3)
             {
-                picBoxBoneco.Image = Resources._5;
+                picBoxBoneco.Image = Resources._4;
             }
             if (quantidadeErros == 4)
             {
+                picBoxBoneco.Image = Resources._5;
+            }
+            if (quantidadeErros == 6)
+            {
+                picBoxBoneco.Image = Resources._6;
+            }
+            if (quantidadeErros == 7)
+            {
                 picBoxBoneco.Image = Resources._7;
             }
-            if (quantidadeErros == 5)
-            {
-                picBoxBoneco.Image = Resources._8;
-            }
-
         }
 
     }

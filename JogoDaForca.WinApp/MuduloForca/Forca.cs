@@ -62,7 +62,7 @@ namespace JogoDaForca.WinApp.MuduloForca
 
         public bool JogadorPerdeu()
         {
-            return erros == 5;
+            return erros == 7;
         }
 
         private string ObterPalavraSecreta()
